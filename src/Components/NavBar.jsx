@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../Assets/logo.png';
 import { NavLink } from 'react-router-dom';
+import PrimaryButton from './PrimaryButton';
 
 
 export default function NavBar() {
@@ -79,6 +80,13 @@ export default function NavBar() {
               }
             >
               Recrutement
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/clientregistration">
+              <PrimaryButton>
+                INSCRIPTION
+              </PrimaryButton>
             </NavLink>
           </li>
         </ul>

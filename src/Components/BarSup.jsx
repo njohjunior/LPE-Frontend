@@ -13,10 +13,10 @@ export default function BarSup() {
         <span><FontAwesomeIcon icon={faPhone} /> +237 652 02 59 01</span>
       </div>
       <div className='space-x-10'>
-        <FontAwesomeIcon icon={faFacebookF} />
-        <FontAwesomeIcon icon={faTwitter} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faEnvelope} />
+        <a rel="stylesheet" href="http://www.facebook.com"><FontAwesomeIcon icon={faFacebookF} /></a>
+        <a rel="stylesheet" href="http://www.twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
+        <a rel="stylesheet" href="http://www.instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
+        <a rel="stylesheet" href="mailto:njohjunior4@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
       </div>
     </div>
   )

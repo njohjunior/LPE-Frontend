@@ -7,8 +7,8 @@ import { Outlet } from 'react-router-dom';
 export default function AppLayout() {
   return (
     <>
-      <header>
-        <BarSup />
+      <BarSup />
+      <header className='sticky top-0 w-full z-50'>
         <NavBar />
       </header>
 

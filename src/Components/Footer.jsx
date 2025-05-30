@@ -10,7 +10,7 @@ export default function Footer() {
         
         {/* Section 1 : Logo + Newsletter */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Le Point Express <span className='text-wine'>.</span></h2>
+          <h2 className="text-2xl font-bold mb-4">Le Point Express<span className='text-wine'>.</span></h2>
           <p className="mb-4 text-gray-400">
             Abonnez-vous à notre newsletter pour recevoir nos dernières nouvelles.
           </p>
@@ -45,12 +45,12 @@ export default function Footer() {
           <h3 className="text-xl font-bold mb-4">Contact</h3>
           <ul className="text-gray-400 space-y-2">
             <li>Téléphone : +237 6 XX XX XX XX</li>
-            <li>Email : contact@lepointexpress.com</li>
+            <li>Email : contact@xxxxxxxxx.cm</li>
           </ul>
           <div className="flex space-x-4 mt-4">
-            <a href="www.facebook.com" className="hover:text-wine"><FontAwesomeIcon icon={faFacebookF} /></a>
-            <a href="www.twitter.com" className="hover:text-wine"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="www.instagram.com" className="hover:text-wine"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.facebook.com" className="hover:text-wine"><FontAwesomeIcon icon={faFacebookF} /></a>
+            <a href="https://www.twitter.com" className="hover:text-wine"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="https://www.instagram.com" className="hover:text-wine"><FontAwesomeIcon icon={faInstagram} /></a>
           </div>
         </div>
 
@@ -58,9 +58,9 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-bold mb-4">Politiques</h3>
           <ul className="space-y-2 text-gray-400">
-            <li><a href="www.facebook.com" className="hover:text-white">Politique de confidentialité</a></li>
-            <li><a href="www.facebook.com" className="hover:text-white">Termes & Conditions</a></li>
-            <li><a href="www.facebook.com" className="hover:text-white">Mentions légales</a></li>
+            <li><a href="https://www.google.com" className="hover:text-white">Politique de confidentialité</a></li>
+            <li><a href="https://www.google.com" className="hover:text-white">Termes & Conditions</a></li>
+            <li><a href="https://www.google.com" className="hover:text-white">Mentions légales</a></li>
           </ul>
         </div>
 

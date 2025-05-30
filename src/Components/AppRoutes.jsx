@@ -7,6 +7,7 @@ import Apropos from '../Pages/Apropos';
 import NosServices from '../Pages/NosServices';
 import Traquer from '../Pages/Traquer';
 import Recruitement from '../Pages/Recruitement';
+import ClientRegistration from '../Pages/Client/ClientRegistration';
 
 export default function AppRoutes() {
     return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
                 <Route path='services' element={<NosServices/> } />
                 <Route path='traquer' element={<Traquer />} />
                 <Route path='recruitement' element={<Recruitement />} />
+                <Route path='clientregistration' element={<ClientRegistration />} />
             </Route>
         </Routes>
     )
