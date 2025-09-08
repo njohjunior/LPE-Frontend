@@ -3,8 +3,10 @@ import Logo from '../Assets/logo.png';
 import { NavLink } from 'react-router-dom';
 import PrimaryButton from './PrimaryButton';
 
-
 export default function NavBar() {
+  // Vérifier si l'admin est connecté
+  const admin = JSON.parse(localStorage.getItem('adminInfo')); // récupère les infos de l'admin
+
   return (
     <div className='bg-white px-10 border border-b-2 border-wine flex justify-between items-center'>
       <img src={Logo} alt="Logo de l'entreprise le point express" className='w-32 h-auto' />
@@ -83,15 +85,14 @@ export default function NavBar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/clientregistration">
+            <NavLink to={admin ? "/dashboard" : "/clientregistration"}>
               <PrimaryButton>
-                INSCRIPTION
+                {admin ? "Dashboard" : "INSCRIPTION"}
               </PrimaryButton>
             </NavLink>
           </li>
         </ul>
       </nav>
-
     </div>
-  )
+  );
 }

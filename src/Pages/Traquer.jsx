@@ -1,18 +1,34 @@
-import React from 'react';
-import Lottie from 'lottie-react';
-import Position from '../Assets/Lotties/position.json';
+import React, { useState } from "react";
+import Lottie from "lottie-react";
+import Position from "../Assets/Lotties/position.json";
+import { useNavigate } from "react-router-dom";
+import "../Styles/login.css";
 
 export default function Traquer() {
-  return (
-    <div className="bg-white-smoke py-20 px-4 md:px-16">
-      <div className="max-w-4xl mx-auto rounded-lg shadow-lg bg-white px-10 py-10 text-center space-y-8">
-        <Lottie animationData={Position} className='w-32 mx-auto' />
-        <p className="text-gray-700">Entrez votre identifiant pour suivre votre livraison en temps réel.</p>
+  const [trackingId, setTrackingId] = useState("");
+  const navigate = useNavigate();
 
-        <form action="/tracking-result" method="GET" className="flex flex-col md:flex-row items-center justify-center gap-4">
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/tracking-result?trackingId=${trackingId}`);
+  };
+
+  return (
+    <div className="py-20 px-4 md:px-16 arriere">
+      <div className="max-w-4xl mx-auto rounded-lg shadow-lg border-wine border-t-4 bg-white px-10 py-10 text-center space-y-8">
+        <Lottie animationData={Position} className="w-32 mx-auto" />
+        <p className="text-gray-700">
+          Entrez votre identifiant pour suivre votre livraison en temps réel.
+        </p>
+
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col md:flex-row items-center justify-center gap-4"
+        >
           <input
             type="text"
-            name="trackingId"
+            value={trackingId}
+            onChange={(e) => setTrackingId(e.target.value)}
             placeholder="Ex: LPX123456"
             required
             className="w-full md:w-2/3 px-4 py-3 rounded border focus:outline-none focus:ring-2 focus:ring-wine"
